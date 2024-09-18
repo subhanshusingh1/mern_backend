@@ -1,14 +1,15 @@
-//import modules
+//Importing otp generator module
 import OTP from 'otp-generator'
 
+// Function to generate 6 digit otp
 const generateOtp = () => {
     return (
         OTP.generate(
             6,
             {
-                upperCaseAlphabets:true,
-                lowerCaseAlphabets:false,
-                specialChars:false
+                upperCaseAlphabets:true, // Include Uppercase Letter
+                lowerCaseAlphabets:false, // Exclude Lowercase Letter
+                specialChars:false // Exclude special characters
             }
         )
     )
