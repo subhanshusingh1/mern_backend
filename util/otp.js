@@ -5,7 +5,7 @@ import OTP from 'otp-generator'
 const generateOtp = () => {
     return (
         OTP.generate(
-            6,
+            6, // Length of otp
             {
                 upperCaseAlphabets:true, // Include Uppercase Letter
                 lowerCaseAlphabets:false, // Exclude Lowercase Letter
